@@ -84,7 +84,8 @@ section h3 {
 
 .activity-card .participants-list {
   margin-top: 8px;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style: none;
   color: #444;
 }
 
@@ -105,6 +106,27 @@ section h3 {
 
 .activity-card .participant-email:hover {
   text-decoration: underline;
+}
+
+/* Participant item and delete button */
+.activity-card .participant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activity-card .delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.activity-card .delete-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .form-group {
